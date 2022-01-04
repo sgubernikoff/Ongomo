@@ -2,13 +2,18 @@ body {
   text-align: center;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: small;
-  text-decoration-line: underline;
-  text-decoration-color: white;
   background-image: url("https://lh3.googleusercontent.com/ASnOUIHZQXvDUniTff01YUOvHe1nC_cvoGwSqqFmrOINAiafD-NdQRht8p4O5EHGbq6O8Y-xmvPJwix5O_s5tAvF5tTQxQ-cYJrZ2F__M1SOnkdG8j6p0J4dYOMNkNh54OxTQfuYDQ=w2400?source=screenshot.guru");
   background-color: #cccccc;
   background-size: cover;
 }
 h1 {
-  color: white;
+  color: #027548;
   font-size: 75px;
+}
+
+#brooklyn > img {
+  height: 50px;
+  position: relative;
+  top: -25px;
+  padding-right: 14px;
 }
