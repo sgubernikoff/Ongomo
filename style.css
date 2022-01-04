@@ -3,17 +3,78 @@ body {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: small;
   background-image: url("https://lh3.googleusercontent.com/ASnOUIHZQXvDUniTff01YUOvHe1nC_cvoGwSqqFmrOINAiafD-NdQRht8p4O5EHGbq6O8Y-xmvPJwix5O_s5tAvF5tTQxQ-cYJrZ2F__M1SOnkdG8j6p0J4dYOMNkNh54OxTQfuYDQ=w2400?source=screenshot.guru");
-  background-color: #cccccc;
+  background-color: #027548;
   background-size: cover;
 }
+
 h1 {
   color: #027548;
   font-size: 75px;
 }
 
-#brooklyn > img {
-  height: 50px;
+.show-popup {
+  padding: 0rem 0rem;
+  background-color: #027548;
+  color: #027548;
+  cursor: pointer;
   position: relative;
-  top: -25px;
-  padding-right: 14px;
+  top: -20px;
+  border: 0px;
+}
+.show-popup > img {
+  height: auto;
+  width: 110px;
+  background-color: #027548;
+}
+
+.close-popup {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 5rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+
+  background-color: white;
+  padding: 6rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+h2 {
+  font-size: 40px;
+}
+p {
+  font-size: 15px;
+}
+
+h4 {
+  font-size: 25px;
+  color: blue;
 }

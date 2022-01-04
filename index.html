@@ -1,18 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
     <title>Ongomo</title>
   </head>
   <body>
-    <script src="script.js"></script>
     <h1>Ongomo</h1>
-
-    <div id="brooklyn">
+    <button class="show-popup">
       <img
-        src="https://lh3.googleusercontent.com/w1yR5FLtJWDY0k78YvlY5OJs43gJctGt8LLuS7LfL-grVNTZsdRY0pphkTjV6VUeQ4ECgR3NWa5U6KQYj9_T7OQ-VUbMtHBsxtw99dmgGvC-e3kOg4B5oZFBlMuWFup8vb3h0YJmUw=w600-h315-p-k"
-        id="Enter"
+        src="https://lh3.googleusercontent.com/zKwb0qPjWUY7FGQg7EN1LBUsph-sbA5pxy7pCNVRI8-g1nXV0jHnNpJW4TWFTGu5NycBKqHWD8jw_jcimArVBGGiLk3C60USHJPdArxTKVqyDT96p4-0oaf96hae8oDH7Nyk2EVd8w=w600-h315-p-k"
       />
+    </button>
+    <div class="popup hidden">
+      <button class="close-popup">x</button>
+      <h1>Sam Gubernikoff</h1>
+      <h2>Ah! You've entered - Welcome to my page!</h2>
+      <p>
+        I'm glad you found the view from my apartment and get to see my basic
+        Javascript skills. I'm not proud of how long this took me to do this,
+        but here we are.
+      </p>
+      <h4>Bing<span style="color: orange">Bong</span></h4>
     </div>
+    <div class="overlay hidden"></div>
+    <script src="script.js"></script>
   </body>
 </html>
