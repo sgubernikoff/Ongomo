@@ -74,7 +74,31 @@ p {
   font-size: 15px;
 }
 
-h4 {
+.show-bingBong {
   font-size: 25px;
   color: blue;
+  cursor: pointer;
+  border: none;
+  background-color: none;
+}
+
+ul {
+  text-align: left;
+  width: 100px;
+  position: relative;
+  padding-left: 450px;
+}
+
+.bingBong {
+}
+
+.close-bingBong {
+  position: absolute;
+  top: 15rem;
+  right: 24rem;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  border: none;
+  background: none;
 }

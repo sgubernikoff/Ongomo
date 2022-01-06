@@ -24,3 +24,23 @@ document.addEventListener("keydown", function (e) {
     closePopup();
   }
 });
+
+const bingBong = document.querySelector(".bingBong");
+const btnCloseBingBong = document.querySelector(".close-bingBong");
+const btnOpenBingBong = document.querySelector(".show-bingBong");
+
+const openBingBong = function () {
+  bingBong.classList.remove("hidden");
+  popup.classList.add("hidden");
+  overlay.classList.add("hidden");
+};
+
+const closeBingBong = function () {
+  bingBong.classList.add("hidden");
+  popup.classList.remove("hidden");
+  overlay.classList.remove("hidden");
+};
+
+btnOpenBingBong.addEventListener("click", openBingBong);
+
+btnCloseBingBong.addEventListener("click", closeBingBong);
