@@ -50,3 +50,21 @@ document.addEventListener("keydown", function (e) {
     closeBingBong();
   }
 });
+
+var today = new Date();
+
+var date =
+  today.getMonth() + 1 + "-" + today.getDate() + "-" + today.getFullYear();
+
+document.getElementById("date").innerHTML = date;
+
+function updateClock() {
+  var timer = new Date(),
+    time =
+      timer.getHours() + ":" + timer.getMinutes() + ":" + timer.getSeconds();
+
+  document.getElementById("time").innerHTML = time;
+
+  setTimeout(updateClock, 1000);
+}
+updateClock();
