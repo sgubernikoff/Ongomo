@@ -92,6 +92,7 @@ ul {
 
 li:hover {
   font-size: 60px;
+  cursor: default;
 }
 
 .bingBong {
@@ -114,9 +115,9 @@ li:hover {
 .type {
   font-size: 18px;
   color: white;
-  position: relative;
-  top: 595px;
-  right: 590px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .o {
@@ -217,8 +218,9 @@ li:hover {
 .vwrap {
   overflow: hidden; /* HIDE SCROLL BAR */
   background: rgb(0, 0, 0);
-  position: relative;
-  top: -250px;
+  position: absolute;
+  top: 20px;
+  width: 100%;
 }
 /* (C) TICKER ITEMS */
 .vitem,
@@ -260,4 +262,10 @@ li:hover {
 }
 .vmove:hover {
   animation-play-state: paused;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
 }
