@@ -32,7 +32,7 @@ const btnOpenBingBong = document.querySelector(".show-bingBong");
 const openBingBong = function () {
   bingBong.classList.remove("hidden");
   popup.classList.add("hidden");
-  overlay.classList.add("hidden");
+  overlay.classList.remove("hidden");
 };
 
 const closeBingBong = function () {
@@ -44,3 +44,9 @@ const closeBingBong = function () {
 btnOpenBingBong.addEventListener("click", openBingBong);
 
 btnCloseBingBong.addEventListener("click", closeBingBong);
+
+document.addEventListener("keydown", function (e) {
+  if (e.key === "Escape" && !bingBong.classList.contains("hidden")) {
+    closeBingBong();
+  }
+});

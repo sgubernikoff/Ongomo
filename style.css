@@ -86,19 +86,120 @@ ul {
   text-align: left;
   width: 100px;
   position: relative;
-  padding-left: 450px;
+  padding-left: 470px;
+  font-size: 30px;
+}
+
+li:hover {
+  font-size: 60px;
 }
 
 .bingBong {
+  position: relative;
+  z-index: 8;
 }
 
 .close-bingBong {
   position: absolute;
-  top: 15rem;
-  right: 24rem;
+  top: -0.5rem;
+  right: 23.5rem;
   font-size: 2rem;
   color: white;
   cursor: pointer;
   border: none;
   background: none;
+  z-index: 6;
+}
+
+.type {
+  font-size: 18px;
+  color: white;
+  position: relative;
+  top: 595px;
+  right: 590px;
+}
+
+.o {
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+  text-decoration: none;
+  cursor: default;
+  color: #027548;
+  position: relative;
+  right: -60px;
+}
+.n {
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+  text-decoration: none;
+  cursor: default;
+  color: #027548;
+  position: relative;
+  right: -40px;
+}
+.g {
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+  text-decoration: none;
+  cursor: default;
+  color: #027548;
+  position: relative;
+  right: -20px;
+}
+.oo {
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+  text-decoration: none;
+  cursor: default;
+  color: #027548;
+  position: relative;
+  right: 0px;
+}
+.m {
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+  text-decoration: none;
+  cursor: default;
+  color: #027548;
+  position: relative;
+  right: 20px;
+}
+.ooo {
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+  text-decoration: none;
+  cursor: default;
+  color: #027548;
+  position: relative;
+  right: 40px;
+}
+.o:hover {
+  color: red;
+  text-decoration: none;
+  cursor: default;
+}
+.n:hover {
+  color: orange;
+  text-decoration: none;
+  cursor: default;
+}
+.g:hover {
+  color: yellow;
+  text-decoration: none;
+  cursor: default;
+}
+.oo:hover {
+  color: limegreen;
+  text-decoration: none;
+  cursor: default;
+}
+.m:hover {
+  color: blue;
+  text-decoration: none;
+  cursor: default;
+}
+.ooo:hover {
+  color: indigo;
+  text-decoration: none;
+  cursor: default;
 }
