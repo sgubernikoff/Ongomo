@@ -26,6 +26,7 @@ document.addEventListener("keydown", function (e) {
 });
 
 const bingBong = document.querySelector(".bingBong");
+const overlayBong = document.querySelector(".overlay");
 const btnCloseBingBong = document.querySelector(".close-bingBong");
 const btnOpenBingBong = document.querySelector(".show-bingBong");
 
@@ -44,6 +45,7 @@ const closeBingBong = function () {
 btnOpenBingBong.addEventListener("click", openBingBong);
 
 btnCloseBingBong.addEventListener("click", closeBingBong);
+overlayBong.addEventListener("click", closeBingBong);
 
 document.addEventListener("keydown", function (e) {
   if (e.key === "Escape" && !bingBong.classList.contains("hidden")) {
