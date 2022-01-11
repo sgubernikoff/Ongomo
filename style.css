@@ -5,6 +5,7 @@ body {
   background-image: url("https://lh3.googleusercontent.com/ASnOUIHZQXvDUniTff01YUOvHe1nC_cvoGwSqqFmrOINAiafD-NdQRht8p4O5EHGbq6O8Y-xmvPJwix5O_s5tAvF5tTQxQ-cYJrZ2F__M1SOnkdG8j6p0J4dYOMNkNh54OxTQfuYDQ=w2400?source=screenshot.guru");
   background-color: #027548;
   background-size: cover;
+  background-position: fixed;
 }
 
 h1 {
@@ -115,7 +116,7 @@ li:hover {
 .type {
   font-size: 18px;
   color: white;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0;
 }
@@ -127,7 +128,7 @@ li:hover {
   cursor: default;
   color: #027548;
   position: relative;
-  right: -60px;
+  right: 105px;
 }
 .n {
   -webkit-transition: color 0.5s;
@@ -136,7 +137,7 @@ li:hover {
   cursor: default;
   color: #027548;
   position: relative;
-  right: -40px;
+  right: 125px;
 }
 .g {
   -webkit-transition: color 0.5s;
@@ -145,7 +146,7 @@ li:hover {
   cursor: default;
   color: #027548;
   position: relative;
-  right: -20px;
+  right: 145px;
 }
 .oo {
   -webkit-transition: color 0.5s;
@@ -154,7 +155,7 @@ li:hover {
   cursor: default;
   color: #027548;
   position: relative;
-  right: 0px;
+  right: 165px;
 }
 .m {
   -webkit-transition: color 0.5s;
@@ -163,7 +164,7 @@ li:hover {
   cursor: default;
   color: #027548;
   position: relative;
-  right: 20px;
+  right: 185px;
 }
 .ooo {
   -webkit-transition: color 0.5s;
@@ -172,7 +173,7 @@ li:hover {
   cursor: default;
   color: #027548;
   position: relative;
-  right: 40px;
+  right: 205px;
 }
 .o:hover {
   color: red;
@@ -271,8 +272,9 @@ body {
 }
 
 iframe {
-  position: absolute;
-  top: 65px;
-  right: 72%;
+  position: -webkit-sticky;
+  float: left;
+  left: 0px;
+  padding: 10px;
   width: 300px;
 }
