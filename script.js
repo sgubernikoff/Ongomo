@@ -51,12 +51,17 @@ document.addEventListener("keydown", function (e) {
   }
 });
 
-var today = new Date();
+function updateDate() {
+  var today = new Date();
 
-var date =
-  today.getMonth() + 1 + "-" + today.getDate() + "-" + today.getFullYear();
+  var date =
+    today.getMonth() + 1 + "-" + today.getDate() + "-" + today.getFullYear();
 
-document.getElementById("date").innerHTML = date;
+  document.getElementById("date").innerHTML = date;
+
+  setTimeout(updateClock, 100);
+}
+updateDate();
 
 function updateClock() {
   var timer = new Date(),
