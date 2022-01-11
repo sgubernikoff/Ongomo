@@ -68,7 +68,11 @@ updateDate();
 function updateClock() {
   var timer = new Date(),
     time =
-      timer.getHours() + ":" + timer.getMinutes() + ":" + timer.getSeconds();
+      timer.getHours() +
+      ":" +
+      ("0" + timer.getMinutes()).slice(-2) +
+      ":" +
+      ("0" + timer.getSeconds()).slice(-2);
 
   document.getElementById("time").innerHTML = time;
 
